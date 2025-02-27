@@ -1,0 +1,45 @@
+{
+  "name": "react-kbo-logos",
+  "version": "1.0.0",
+  "description": "KBO 리그 팀들의 로고를 제공하는 React 컴포넌트 라이브러리",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "dev": "vite"
+  },
+  "keywords": [
+    "react",
+    "kbo",
+    "logo",
+    "baseball",
+    "korean baseball",
+    "svg"
+  ],
+  "author": "Gwanghun-Im",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.0",
+    "vite": "^6.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gwanghun-Im/react-kbo-logos"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
