@@ -56,6 +56,6 @@ function App() {
 - `size?: number` - 로고의 크기 (픽셀 단위, 기본값: 40)
 - `className?: string` - 추가적인 스타일링을 위한 CSS 클래스
 
-## 라이선스
+## License
 
-MIT
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
