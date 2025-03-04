@@ -22,13 +22,12 @@ const config = {
   plugins: [
     resolve(),
     svgr({
+      exportType: "named",
+      namedExport: "ReactComponent",
       svgo: false,
       ref: true,
       memo: true,
-      svgProps: {
-        "data-testid": "{title}",
-      },
-      exportType: "named",
+      typescript: true,
     }),
     typescript({
       tsconfig: "./tsconfig.json",
