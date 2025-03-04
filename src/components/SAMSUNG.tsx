@@ -1,6 +1,6 @@
 import React from "react"
 import { LogoProps } from "./types"
-import SamsungLogo from "../assets/samsung.svg"
+import SamsungLogo from "../../src/assets/samsung.svg"
 
 export const SAMSUNG: React.FC<LogoProps> = ({ size = 40, className = "" }) => {
   return (

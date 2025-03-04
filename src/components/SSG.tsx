@@ -1,6 +1,6 @@
 import React from "react"
 import { LogoProps } from "./types"
-import SsgLogo from "../assets/ssg.svg"
+import SsgLogo from "../../src/assets/ssg.svg"
 
 export const SSG: React.FC<LogoProps> = ({ size = 40, className = "" }) => {
   return (

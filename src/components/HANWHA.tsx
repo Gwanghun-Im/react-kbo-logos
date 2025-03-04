@@ -1,6 +1,6 @@
 import React from "react"
 import { LogoProps } from "./types"
-import HanwhaLogo from "../assets/hanwha.svg"
+import HanwhaLogo from "../../src/assets/hanwha.svg"
 
 export const HANWHA: React.FC<LogoProps> = ({ size = 40, className = "" }) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react"
 import { LogoProps } from "./types"
-import KtLogo from "../assets/kt.svg"
+import KtLogo from "../../src/assets/kt.svg"
 
 export const KT: React.FC<LogoProps> = ({ size = 40, className = "" }) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react"
 import { LogoProps } from "./types"
-import DoosanLogo from "../assets/doosan.svg"
+import DoosanLogo from "../../src/assets/doosan.svg"
 
 export const DOOSAN: React.FC<LogoProps> = ({ size = 40, className = "" }) => {
   return (
