@@ -1,6 +1,6 @@
 import React from "react"
 import { LogoProps } from "./types"
-import { ReactComponent as KiaLogo } from "../assets/kia.svg"
+import { ReactComponent as KiaLogo } from "../../src/assets/kia.svg"
 
 export const KIA: React.FC<LogoProps> = ({ size = 40, className = "" }) => {
   return (

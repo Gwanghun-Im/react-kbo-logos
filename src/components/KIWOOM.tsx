@@ -1,6 +1,6 @@
 import React from "react"
 import { LogoProps } from "./types"
-import KiwoomLogo from "../../src/assets/kiwoom.svg"
+import { ReactComponent as KiwoomLogo } from "../../src/assets/kiwoom.svg"
 
 export const KIWOOM: React.FC<LogoProps> = ({ size = 40, className = "" }) => {
   return (

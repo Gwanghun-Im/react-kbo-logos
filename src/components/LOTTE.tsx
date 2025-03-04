@@ -1,6 +1,6 @@
 import React from "react"
 import { LogoProps } from "./types"
-import LotteLogo from "../../src/assets/lotte.svg"
+import { ReactComponent as LotteLogo } from "../../src/assets/lotte.svg"
 
 export const LOTTE: React.FC<LogoProps> = ({ size = 40, className = "" }) => {
   return (

@@ -1,6 +1,6 @@
 import React from "react"
 import { LogoProps } from "./types"
-import LgLogo from "../../src/assets/lg.svg"
+import { ReactComponent as LgLogo } from "../../src/assets/lg.svg"
 
 export const LG: React.FC<LogoProps> = ({ size = 40, className = "" }) => {
   return (
