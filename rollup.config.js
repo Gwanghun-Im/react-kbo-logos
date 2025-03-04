@@ -32,7 +32,7 @@ const config = {
     typescript({
       tsconfig: "./tsconfig.json",
       exclude: ["**/*.test.ts", "**/*.test.tsx"],
-      declaration: true,
+      outDir: "dist",
       declarationDir: "dist/types",
     }),
   ],
