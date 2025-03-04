@@ -1,6 +1,6 @@
 {
   "name": "react-kbo-logos",
-  "version": "1.1.1",
+  "version": "1.1.0",
   "description": "KBO 리그 팀들의 로고를 제공하는 React 컴포넌트 라이브러리",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
