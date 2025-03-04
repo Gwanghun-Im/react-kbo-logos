@@ -10,7 +10,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "rollup -c",
     "prepare": "npm run build",
     "dev": "vite"
   },
@@ -29,11 +29,16 @@
     "react-dom": ">=16.8.0"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@svgr/rollup": "^8.1.0",
     "@svgr/webpack": "^8.1.0",
     "@types/react": "^18.2.0",
     "@vitejs/plugin-react": "^4.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup": "^4.34.9",
+    "rollup-plugin-dts": "^6.1.1",
     "typescript": "^5.0.0",
     "vite": "^6.2.0",
     "vite-plugin-svgr": "^4.3.0"
