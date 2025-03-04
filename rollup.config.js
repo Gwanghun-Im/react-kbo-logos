@@ -4,36 +4,22 @@ const svgr = require("@svgr/rollup")
 
 const config = {
   input: "src/index.ts",
-  output: [
-    {
-      dir: "dist",
-      format: "cjs",
-      sourcemap: true,
-      exports: "named",
-    },
-    {
-      dir: "dist/esm",
-      format: "esm",
-      sourcemap: true,
-      exports: "named",
-    },
-  ],
+  output: {
+    dir: "dist",
+    format: "cjs",
+    sourcemap: true,
+    exports: "named",
+  },
   external: ["react", "react-dom"],
   plugins: [
     resolve(),
     svgr({
-      exportType: "named",
-      namedExport: "ReactComponent",
-      svgo: false,
-      ref: true,
-      memo: true,
       typescript: true,
+      ref: true,
     }),
     typescript({
       tsconfig: "./tsconfig.json",
       exclude: ["**/*.test.ts", "**/*.test.tsx"],
-      outDir: "dist",
-      declarationDir: "dist/types",
     }),
   ],
 }
