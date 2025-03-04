@@ -1,10 +1,10 @@
 import React from "react"
 import { LogoProps } from "./types"
-import NCLogo from "../assets/nc.svg"
+import NcLogo from "../assets/nc.svg"
 
 export const NC: React.FC<LogoProps> = ({ size = 40, className = "" }) => {
   return (
-    <NCLogo
+    <NcLogo
       width={size}
       height={size}
       className={className}
