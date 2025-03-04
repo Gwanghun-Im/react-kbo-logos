@@ -1,7 +1,7 @@
-import typescript from "@rollup/plugin-typescript"
-import resolve from "@rollup/plugin-node-resolve"
-import svgr from "@svgr/rollup"
-import dts from "rollup-plugin-dts"
+const typescript = require("@rollup/plugin-typescript")
+const resolve = require("@rollup/plugin-node-resolve")
+const svgr = require("@svgr/rollup")
+const dts = require("rollup-plugin-dts")
 
 const config = [
   {
@@ -31,4 +31,4 @@ const config = [
   },
 ]
 
-export default config
+module.exports = config
