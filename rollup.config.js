@@ -1,27 +1,35 @@
-const typescript = require("@rollup/plugin-typescript")
 const resolve = require("@rollup/plugin-node-resolve")
+const commonjs = require("@rollup/plugin-commonjs")
+const typescript = require("@rollup/plugin-typescript")
 const svgr = require("@svgr/rollup")
+const { copy } = require("@web/rollup-plugin-copy")
 
-const config = {
+module.exports = {
   input: "src/index.ts",
   output: {
     dir: "dist",
-    format: "cjs",
-    sourcemap: true,
-    exports: "named",
+    format: "esm",
+    preserveModules: true,
+    preserveModulesRoot: "src",
   },
-  external: ["react", "react-dom"],
   plugins: [
     resolve(),
+    commonjs(),
+    typescript({
+      declaration: true,
+      declarationDir: "dist",
+      rootDir: "src",
+    }),
     svgr({
+      exportType: "named",
       typescript: true,
       ref: true,
     }),
-    typescript({
-      tsconfig: "./tsconfig.json",
-      exclude: ["**/*.test.ts", "**/*.test.tsx"],
+    copy({
+      patterns: ["src/assets/**/*"],
+      rootDir: "src",
+      dest: "dist",
     }),
   ],
+  external: ["react", "react-dom"],
 }
-
-module.exports = config

@@ -3,15 +3,14 @@
   "version": "1.1.10",
   "description": "KBO 리그 팀들의 로고를 제공하는 React 컴포넌트 라이브러리",
   "main": "dist/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/types/index.d.ts",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src/assets",
-    "README.md"
+    "dist"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && rollup -c",
     "prepare": "npm run build",
     "dev": "vite"
   },
@@ -36,6 +35,7 @@
     "@svgr/webpack": "^8.1.0",
     "@types/react": "^18.2.0",
     "@vitejs/plugin-react": "^4.3.4",
+    "@web/rollup-plugin-copy": "^0.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^4.34.9",
@@ -50,5 +50,9 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2"
+  },
+  "sideEffects": false
 }
