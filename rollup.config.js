@@ -24,6 +24,10 @@ module.exports = {
       exportType: "named",
       typescript: true,
       ref: true,
+      dimensions: false,
+      svgProps: {
+        preserveAspectRatio: "xMidYMid meet", // 비율 유지하면서 중앙 정렬
+      },
     }),
     copy({
       patterns: ["src/assets/**/*"],
