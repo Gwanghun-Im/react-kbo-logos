@@ -1,14 +1,22 @@
 # react-kbo-logos
 
-KBO 리그 팀들의 로고를 제공하는 React 컴포넌트 라이브러리입니다.
+_Read this in other languages: [한국어](README.ko.md)_
 
-## 설치
+[![npm version](https://img.shields.io/npm/v/react-kbo-logos.svg)](https://www.npmjs.com/package/react-kbo-logos)
+[![npm downloads](https://img.shields.io/npm/dm/react-kbo-logos.svg)](https://www.npmjs.com/package/react-kbo-logos)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/Gwanghun-Im/react-kbo-logos)](https://github.com/Gwanghun-Im/react-kbo-logos/stargazers)
+[![hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FGwanghun-Im%2Freact-kbo-logos&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+A React component library providing logos for KBO League teams.
+
+## Installation
 
 ```bash
 npm install react-kbo-logos
 ```
 
-## 사용 방법
+## Usage
 
 ```tsx
 import {
@@ -30,34 +38,84 @@ function App() {
       <KIA size={100} />
       <DOOSAN size={80} />
       <LG size={60} />
-      {/* 다른 팀 로고들도 동일한 방식으로 사용 가능 */}
+      {/* Other team logos can be used in the same way */}
     </div>
   )
 }
 ```
 
-👇chek in this website below
+👇 Check out the demo in the website below
 [gwanghun.im](https://www.gwanghun.im/tools/react-kbo-logos)
 
-## 제공되는 컴포넌트
+## Available Components
 
-- `<DOOSAN />` - 두산 베어스
-- `<LG />` - LG 트윈스
-- `<KIA />` - KIA 타이거즈
-- `<SSG />` - SSG 랜더스
-- `<KIWOOM />` - 키움 히어로즈
-- `<KT />` - KT 위즈
-- `<NC />` - NC 다이노스
-- `<SAMSUNG />` - 삼성 라이온즈
-- `<LOTTE />` - 롯데 자이언츠
-- `<HANWHA />` - 한화 이글스
+- `<DOOSAN />` - Doosan Bears
+- `<LG />` - LG Twins
+- `<KIA />` - KIA Tigers
+- `<SSG />` - SSG Landers
+- `<KIWOOM />` - Kiwoom Heroes
+- `<KT />` - KT Wiz
+- `<NC />` - NC Dinos
+- `<SAMSUNG />` - Samsung Lions
+- `<LOTTE />` - Lotte Giants
+- `<HANWHA />` - Hanwha Eagles
 
 ## Props
 
-각 로고 컴포넌트는 다음 props를 받습니다:
+Each logo component accepts the following props:
 
-- `size?: number` - 로고의 크기 (픽셀 단위, 기본값: 40)
-- `className?: string` - 추가적인 스타일링을 위한 CSS 클래스
+- `size?: number` - Size of the logo (in pixels, default: 40)
+- `className?: string` - CSS class for additional styling
+
+## Requirements
+
+- React >= 16.8.0
+- React DOM >= 16.8.0
+
+## Development
+
+To start development:
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+To build the package:
+
+```bash
+npm run build
+```
+
+## Browser Support
+
+This package uses SVG for the logos, which is supported by all modern browsers.
+
+## Contributing
+
+Contributions are always welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Keywords
+
+- react
+- kbo
+- logo
+- baseball
+- korean baseball
+- svg
+
+## Repository
+
+[GitHub Repository](https://github.com/Gwanghun-Im/react-kbo-logos)
 
 ## License
 
